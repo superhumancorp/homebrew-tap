@@ -8,9 +8,8 @@ cask "r2drop" do
   arch arm: "aarch64", intel: "x86_64"
 
   version "0.1.0"
-  # Replace with real SHA256 values when publishing a new app release.
-  sha256 arm:   "0000000000000000000000000000000000000000000000000000000000000000",
-         intel: "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 arm:   "33432f552fae057921ce289627e3fb2c2a514ad003cd1273e24c3b80c77e2c0f",
+         intel: "dd362091309cb284bc7b971b57a81b83e63ba24c830258a21f4a09e6104be7de"
 
   url "https://github.com/superhumancorp/r2drop/releases/download/v#{version}/R2Drop-#{version}-#{arch}.dmg",
       verified: "github.com/superhumancorp/r2drop/"
