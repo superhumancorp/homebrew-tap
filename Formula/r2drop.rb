@@ -11,7 +11,7 @@ class R2drop < Formula
   license "MIT"
 
   livecheck do
-    url "https://github.com/superhumancorp/homebrew-tap/releases"
+    url :stable
     regex(/^cli-v(\d+(?:\.\d+)+)$/i)
     strategy :github_releases
   end
