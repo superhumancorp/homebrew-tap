@@ -7,7 +7,7 @@
 class R2drop < Formula
   desc "CLI for uploading files to Cloudflare R2 storage"
   homepage "https://r2drop.com"
-  version "0.1.4"
+  version "0.1.7"
   license "MIT"
 
   livecheck do
@@ -19,24 +19,12 @@ class R2drop < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/superhumancorp/homebrew-tap/releases/download/cli-v#{version}/r2drop-macos-arm64.tar.gz"
-      sha256 "190bc0b4dcdc80f47bfb4edcefa5c368550bb85a93411b58d2d0d77e818f6273"
+      sha256 "6910ace8ff1802222819fecf4a92bb6c4976f587eab4d21e57c35220c08723b7"
     end
 
     if Hardware::CPU.intel?
       url "https://github.com/superhumancorp/homebrew-tap/releases/download/cli-v#{version}/r2drop-macos-x86_64.tar.gz"
-      sha256 "2ae58db8746557622169f6a6c41da9aa5a4cb80853eb7cf5845f157ef8c8a6fd"
-    end
-  end
-
-  on_linux do
-    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/superhumancorp/homebrew-tap/releases/download/cli-v#{version}/r2drop-linux-x86_64.tar.gz"
-      sha256 "2d4588afc577e70158ee5656abc05d90ddec90550e07bce505e68a2f21cc11fb"
-    end
-
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/superhumancorp/homebrew-tap/releases/download/cli-v#{version}/r2drop-linux-arm64.tar.gz"
-      sha256 "7044ff7a5afb68398f5a12e9e6cadf178c64e0ab30035b2e8b1e07c3ba7dd901"
+      sha256 "4ffff603018e5449253c0b138089f67ac81c14b2646316a201863d92fbed8e18"
     end
   end
 
